@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Demo2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Demo2"
+    
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem Title="Accueil"
+                Icon="maison.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:HomePage}"/>
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Hotels"
+                Icon="hotel.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:HotelsPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Reservations"
+                Icon="reservations.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ReservationsPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Log out"
+                Icon="deconnexion.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ReservationsPage}" />
+        </Tab>
+    </FlyoutItem>
+    <FlyoutItem Title="Paramètres"
+                Icon="parametres.png">
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ParametrePage}" />
+        </Tab>
+    </FlyoutItem>
+
+
+</Shell>
