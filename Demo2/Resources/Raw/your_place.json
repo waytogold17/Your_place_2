@@ -2,7 +2,7 @@
     {
       "Nom": "Viroth’s Hotel ",
       "Description": "Hotel à Siem Reap est un hôtel de luxe 4,5 étoiles situé dans le quartier dynamique de Wat Bo à Siem Reap1. L’hôtel dispose d’une piscine extérieure de 20 mètres de long et d’un restaurant en plein air1. Les chambres sont décorées dans le style des années 50 et disposent d’une connexion Wi-Fi gratuite1. L’hôtel est situé à seulement 400 mètres du vieux marché et à 600 mètres de la célèbre Pub Street1. Le temple d’Angkor Wat, site classé au patrimoine mondial de l’UNESCO, est à 6,4 km et l’aéroport international de Siem Reap-Angkor est implanté à 8 km",
-      "Etoiles": "★★★★★",
+      "Etoiles": "⭐️⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Suite double",
       "TypeChambre2":"Suite double avec vue sur la mer",
       "TypeChambre3":"Chambre deluxe simple",
@@ -23,7 +23,7 @@
     {
       "Nom": "The Magnolia Hotel & Spa",
       "Description": "Situé à Victoria, à seulement 4 minutes à pied du port intérieur, le The Magnolia Hotel & Spa vous propose un restaurant sur place et des chambres avec une connexion Wi-Fi gratuite. Les chambres du The Magnolia Hotel & Spa sont toutes équipées de la télévision par câble. Elles comprennent également un bureau. Des articles de toilette Aveda, du café gastronomique, du thé et une bouteille d'eau vous seront fournis. L'Hotel Magnolia vous offrira des fruits frais à l'arrivée.",
-      "Etoiles": "★★★★☆",
+      "Etoiles": "⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre supérieure",
       "TypeChambre2":"Chambre D'angle",
       "TypeChambre3":"Chambre diamant vue ville",
@@ -44,7 +44,7 @@
     {
      "Nom": "Keemala",
       "Description": "Le Keemala - SHA Plus est niché au cœur d’une végétation luxuriante au sommet des collines ondoyantes surplombant le village de Kamala et la mer d’Andaman. Les salles de bains privatives sont pourvues d’une baignoire et d’articles de toilette ravissants.",
-      "Etoiles": "★★★★☆",
+      "Etoiles": "⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre traditionnelle simple",
       "TypeChambre2":"Suite deluxe vue cascade",
       "TypeChambre3":"Cocon forestier en hauteur",
@@ -65,7 +65,7 @@
     {
       "Nom": "Tulemar Bungalows & Villas",
       "Description": "Tulemar est le premier complexe hôtelier de Manuel Antonio. Fermé et sécurisé, le complexe de 33 acres dans la jungle est perché sur la colline surplombant le Pacifique.",
-      "Etoiles": "★★★★★",
+      "Etoiles": "⭐️⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Suite simple",
       "TypeChambre2":"Suite double",
       "TypeChambre3":"bungalow deluxe",
@@ -86,7 +86,7 @@
     {
         "Nom": "Quinta Jardins do Lago",
       "Description": "Situé dans les collines entourant Funchal, le Quinta Jardins do Lago vous accueille dans une demeure de caractère datant du XVIIIe siècle, nichée dans un vaste jardin botanique comportant 600 espèces de plantes. Toutes les chambres possèdent un balcon donnant sur le jardin. Dotées d’un grand balcon, les chambres spacieuses du Quinta Jardins do Lago comprennent la climatisation,le Wi-Fi.",
-      "Etoiles": "★★★★★",
+      "Etoiles": "⭐️⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre deluxe simple ",
       "TypeChambre2":"Chambre deluxe VIP",
       "TypeChambre3":"Chambre plein air vue montagne ",
@@ -107,7 +107,7 @@
     {
         "Nom": "The Place Luxury Boutique Villas ",
       "Description": "Excellent choix pour les voyageurs visitant Koh Tao, la The Place Luxury Boutique Villas offre un cadre romantique et de nombreux services conçus pour sublimer votre séjour. Avec ses chambres équipées d'une télévision à écran plat, d'une climatisation et d'un minibar. Pendant votre séjour la The Place Luxury Boutique Villas vous fait profiter d'un service de chambre et d'une conciergerie.",
-      "Etoiles": "★★★★★",
+      "Etoiles": "⭐️⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre simple",
       "TypeChambre2":"Suite romantique ",
       "TypeChambre3":"Chambre vue mer",
@@ -128,7 +128,7 @@
     {
         "Nom": "La Maison d’Aix",
       "Description": "L'établissement La Maison d'Aix se trouve dans le quartier Mazarin, à 3 minutes à pied du cours Mirabeau. La connexion Wi-Fi est gratuite.",
-      "Etoiles": "★★★★☆",
+      "Etoiles": "⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre simple",
       "TypeChambre2":"Chambre double",
       "TypeChambre3":"Complexe deluxe",
@@ -149,7 +149,7 @@
     {
         "Nom": "Hotel 41",
       "Description": "Installé derrière le palais de Buckingham, en face des écuries royales, le 41 est un hôtel de luxe qui propose de superbes chambres, de généreuses collations.",
-      "Etoiles": "★★★★★",
+      "Etoiles": "⭐️⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre simple",
       "TypeChambre2":"Chambre double",
       "TypeChambre3":"Suite diplomatique",
@@ -171,7 +171,7 @@
     {
         "Nom": "Belmond Palacio Nazarenas",
       "Description": "le Belmond Palacio Nazarenas est une destination de choix pour les touristes. Le Belmond Palacio Nazarenas vous propose une foule de commodités.",
-      "Etoiles": "★★★★★",
+      "Etoiles": "⭐️⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Suite deluxe",
       "TypeChambre2":"Chambre simple ",
       "TypeChambre3":"Suite détente",
@@ -192,7 +192,7 @@
     {
         "Nom": "The Nantucket Hotel & Resort ",
       "Description": "L'hôtel propose différents types d'hébergement, notamment des chambres, des suites et des cottages, tous conçus avec un mélange d'équipements modernes et du charme classique de la Nouvelle-Angleterre. Chaque chambre est meublée avec soin et équipée de lits confortables, de salles de bains privatives et de commodités modernes telles que des télévisions à écran plat, une connexion Wi-Fi et la climatisation.",
-      "Etoiles": "★★★★★",
+      "Etoiles": "⭐️⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre simple",
       "TypeChambre2":"Chambre kids",
       "TypeChambre3":"Chambre kids double",
@@ -213,7 +213,7 @@
     {
         "Nom": "The Sherry-Netherland Hotel",
       "Description": "Le Sherry-Netherland Hotel est un hôtel emblématique situé à New York, aux États-Unis. Il est réputé pour son élégance intemporelle, son service de premier ordre et son emplacement privilégié sur la Cinquième Avenue, en face de Central Park.L'hôtel occupe un magnifique bâtiment de style néo-renaissance et propose des chambres et des suites somptueusement décorées. Chaque hébergement est doté d'un mobilier raffiné, de linge de maison de qualité supérieure et d'équipements modernes tels que des téléviseurs à écran plat, une connexion Wi-Fi et des salles de bains en marbre.",
-      "Etoiles": "★★★★☆",
+      "Etoiles": "⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre deluxe simple",
       "TypeChambre2":"Chambre deluxe VIP",
       "TypeChambre3":"Suite diplomatique",
@@ -234,7 +234,7 @@
     {
         "Nom": "The Omnia ",
       "Description": "Les chambres et les suites de The Omnia sont aménagées avec soin, offrant des équipements modernes, un mobilier confortable et une vue imprenable sur les paysages environnants. Les clients peuvent s'attendre à des lits confortables, des salles de bains spacieuses, des technologies de pointe et des services personnalisés pour un séjour mémorable.",
-      "Etoiles": "★★★★★",
+      "Etoiles": "⭐️⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre simple",
       "TypeChambre2":"Chambre vue montagne",
       "TypeChambre3":"Suite meeting",
@@ -255,7 +255,7 @@
     {
         "Nom": "The Alpina Gstaad",
       "Description": "L'hôtel est magnifiquement conçu, avec une architecture alpine traditionnelle combinée à des touches de modernité. Les chambres et les suites sont spacieuses, offrant des vues spectaculaires sur les montagnes environnantes. Chaque chambre est aménagée avec goût, alliant confort et luxe, et équipée de commodités haut de gamme pour répondre aux besoins des clients les plus exigeants.",
-      "Etoiles": "★★★★★",
+      "Etoiles": "⭐️⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre Old school",
       "TypeChambre2":"Chambre Old school deluxe",
       "TypeChambre3":"Suite meeting",
@@ -276,7 +276,7 @@
     {
         "Nom": "The Milestone Hotel and Residences",
       "Description": "L'hôtel offre une variété d'hébergements, allant des chambres élégantes aux suites spacieuses. Chaque chambre est décorée avec goût et équipée de commodités modernes, tout en conservant une atmosphère chaleureuse et intemporelle. Les résidences du Milestone Hotel proposent des appartements de luxe entièrement équipés, parfaits pour les séjours prolongés ou les familles.",
-      "Etoiles": "★★★★☆",
+      "Etoiles": "⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Antique luxury simple",
       "TypeChambre2":"Joyful Room deluxe",
       "TypeChambre3":"Garden view room",
@@ -297,7 +297,7 @@
     {
         "Nom": "Sukhumvit Park, Bangkok — Marriott Executive Apartments",
       "Description": "Les appartements de Sukhumvit Park offrent un espace de vie spacieux et élégant, avec des aménagements modernes et des équipements de haute qualité. Chaque appartement est équipé d'une cuisine entièrement équipée, d'un salon confortable, d'une chambre à coucher séparée et d'une salle de bains élégante. Les clients peuvent profiter de la commodité d'avoir leur propre espace de vie, tout en bénéficiant des services et des installations d'un hôtel cinq étoiles.",
-      "Etoiles": "★★★★☆",
+      "Etoiles": "⭐️⭐️⭐️⭐️",
       "TypeChambre1":"Chambre simple ",
       "TypeChambre2":"Duplexe familiale",
       "TypeChambre3":"Suite meeting",
