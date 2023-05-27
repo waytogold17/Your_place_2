@@ -19,7 +19,7 @@ namespace Demo2.Services;
                 return hotelList;
 
             // Online
-            var response = await httpClient.GetAsync("https://www.montemagno.com/monkeys.json");
+            var response = await httpClient.GetAsync("https://raw.githubusercontent.com/waytogold17/Your_place_2/amelio2s/Demo2/Resources/Raw/your_place.json");
             if (response.IsSuccessStatusCode)
             {
                 hotelList = await response.Content.ReadFromJsonAsync(HotelContext.Default.ListHotel);
