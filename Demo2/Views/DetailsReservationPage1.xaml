@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo2.DetailsReservationPage1"
+             xmlns:model="clr-namespace:Demo2.Models"
+             xmlns:viewmodel="clr-namespace:Demo2.ViewModel"
+             x:DataType="viewmodel:HotelDetailsPageViewModel"
+             BackgroundImageSource="hotel2"
+             
+             Title="Détails bookings ">
+    <ScrollView>
+        <VerticalStackLayout>
+       
+
+        <Label 
+            Text="Welcome to .NET MAUI!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+            <Picker Title="Selectionnez votre chambre "
+          ItemsSource="{Binding Hotel}"
+        ItemDisplayBinding="{Binding Hotel.TypeChambre1}"
+        SelectedItem="{Binding Hotel.PrixChambre1}" />
+
+            <Label Text="{Binding Hotel.TypeChambre1}"  />
+            <Label Text="SERVICE"/>
+            <Label Text="{Binding Hotel.PrixChambre1}" />
+            <Image Source="{Binding Hotel.ImageChambre1}" />
+
+            <Label Text="Début du séjour "/>
+            <DatePicker x:Name="startDate"
+                       Format="D"
+                        DateSelected="StartDate_DateSelected"
+                       />
+            <Label Text="Fin du séjour"/>
+            <DatePicker  x:Name="endDate"
+                          Format="D"
+                        DateSelected="StartDate_DateSelected"
+                        BindingContext="{x:Reference startDate}"
+                         MinimumDate="{Binding CurrentDate}"
+                       
+                         />
+            <Label Text="Nombre total de jour"
+                   TextColor="Khaki"
+                   FontSize="Medium"
+                   x:Name="label"
+                   />
+
+
+
+
+            <Button Text="Suivant" 
+                     
+                        Command="{Binding NaviguatePlusCommand}"
+                        HorizontalOptions="StartAndExpand" 
+                        WidthRequest="160" 
+                        Margin="8"
+                        Style="{StaticResource ButtonOutline}"/>
+        
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>

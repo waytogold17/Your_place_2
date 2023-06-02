@@ -1,7 +1,4 @@
 ﻿
-
-
-
 namespace Demo2.ViewModel;
 
 [QueryProperty(nameof(Hotel), nameof(Hotel))]
@@ -9,11 +6,28 @@ namespace Demo2.ViewModel;
 public partial class HotelDetailsPageViewModel : BaseViewModel
 {
     IMap map;
+    public DateTime currentDate;
+    public DateTime CurrentDate
+    {
+        get { return currentDate; }
+        set
+        {
+            currentDate = value;
+            OnPropertyChanged();
+        }
+    }
+
+
+
     public HotelDetailsPageViewModel(IMap map)
     {
         this.map = map;
+        currentDate = DateTime.Today;
 
     }
+
+    
+
     [ObservableProperty]
     Hotel hotel;
 
@@ -37,7 +51,14 @@ public partial class HotelDetailsPageViewModel : BaseViewModel
         }
     }
 
+  
+
     [RelayCommand]
-    Task Naviguate() => Shell.Current.GoToAsync(nameof(ReservationsPage));
-   
+    async Task NaviguateNow() => await Shell.Current.GoToAsync(nameof(DetailsReservationPage1));
+
+    [RelayCommand]
+    async Task NaviguatePlus() => await Shell.Current.GoToAsync(nameof(ValidationReservationPage));
+
+
 }
+

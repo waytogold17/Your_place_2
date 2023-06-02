@@ -34,9 +34,10 @@ public static class MauiProgram
         builder.Services.AddSingleton<MainPage>();
 		builder.Services.AddSingleton<HotelServicecs>();
         builder.Services.AddSingleton<ReservationsPage>();
-
         builder.Services.AddTransient<HotelDetailsPageViewModel>();
         builder.Services.AddTransient<HotelDetailsPage>();
+		builder.Services.AddTransient<DetailsReservationPage1>();
+		builder.Services.AddTransient<ValidationReservationPage>();
 
         return builder.Build();
 	}

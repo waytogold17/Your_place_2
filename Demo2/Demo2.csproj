@@ -49,8 +49,18 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="ChambreDetailsPage.xaml.cs" />
+	  <Compile Remove="ReservationPageTabbed.xaml.cs" />
+	  <Compile Remove="ViewModel\DetailReservationViewModel.cs" />
 	  <Compile Remove="ViewModel\RoomDetailsViewModel.cs" />
 	  <Compile Remove="ViewModel\RoomListViewModel.cs" />
+	  <Compile Remove="Views\ReservationTabbedPage.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="ChambreDetailsPage.xaml" />
+	  <MauiXaml Remove="ReservationPageTabbed.xaml" />
+	  <MauiXaml Remove="Views\ReservationTabbedPage.xaml" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -60,31 +70,34 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="ChambreDetailsPage.xaml">
+	  <MauiXaml Update="Views\DetailsReservationPage1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FlyoutMenuPage.xaml">
+	  <MauiXaml Update="Views\FlyoutMenuPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="FlyoutPage.xaml">
+	  <MauiXaml Update="Views\FlyoutPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="HomePage.xaml">
+	  <MauiXaml Update="Views\HomePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="HotelDetailsPage.xaml">
+	  <MauiXaml Update="Views\HotelDetailsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="HotelsPage.xaml">
+	  <MauiXaml Update="Views\HotelsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Parametre.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ParametrePage.xaml">
+	  <MauiXaml Update="Views\ParametrePage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ReservationsPage.xaml">
+	  <MauiXaml Update="Views\ReservationsPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ValidationReservationPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="ViewModel\HotelPageViewModel.xaml">

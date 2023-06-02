@@ -7,6 +7,15 @@
     
     Shell.FlyoutBehavior="Flyout">
 
+    <Shell.FlyoutHeader>
+        <Image Source="logo.jpeg" />
+    </Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <Label Text="Trust the process " HeightRequest="30" HorizontalTextAlignment="Center"/>
+    </Shell.FlyoutFooter>
+        
+
     <FlyoutItem Title="Accueil"
                 Icon="maison.png">
         <Tab>
@@ -20,10 +29,15 @@
         </Tab>
     </FlyoutItem>
     <FlyoutItem Title="Reservations"
-                Icon="reservations.png">
-        <Tab>
-            <ShellContent ContentTemplate="{DataTemplate local:ReservationsPage}" />
+                Icon="reservations.png" Route="reserverons">
+        <Tab Title="Réservations" >
+            <ShellContent Title="Details" ContentTemplate="{DataTemplate local:DetailsReservationPage1}" />
+            <ShellContent Title="Validation" ContentTemplate="{DataTemplate local:ValidationReservationPage}" />
         </Tab>
+        
+
+   
+
     </FlyoutItem>
     <FlyoutItem Title="Log out"
                 Icon="deconnexion.png">
@@ -37,6 +51,9 @@
             <ShellContent ContentTemplate="{DataTemplate local:ParametrePage}" />
         </Tab>
     </FlyoutItem>
+
+
+    
     <Shell.Resources>
         <ResourceDictionary>
             <Style x:Key="BaseStyle" TargetType="Element">
@@ -53,5 +70,7 @@
             <Style BasedOn="{StaticResource BaseStyle}" TargetType="ShellItem" ApplyToDerivedTypes="True" />
         </ResourceDictionary>
     </Shell.Resources>
+   
+
 
 </Shell>

@@ -12,7 +12,7 @@
 
 
 
-    <ScrollView >
+    <ScrollView  >
         <Grid RowDefinitions="Auto,Auto,*">
             <BoxView
                 
@@ -37,79 +37,78 @@
                 <Label Style="{StaticResource MediumLabel}" Text="{Binding Hotel.Description,StringFormat='Résumé  '}"  />
                 <Label Style="{StaticResource SmallLabel}" Text="{Binding Hotel.Description}" />
 
+                <ScrollView Orientation="Horizontal" IsClippedToBounds="True" HorizontalScrollBarVisibility="Never">
 
+                    <StackLayout Orientation="Horizontal">
 
+                        <Frame BorderColor="Gray" CornerRadius="5" Margin="15">
+                            <StackLayout>
 
-
-                <StackLayout>
-
-                    <Frame BorderColor="Gray" CornerRadius="5" Margin="15">
-                    <StackLayout>
-                       
-                        <Image Source="{Binding Hotel.ImageChambre1}"
+                                <Image Source="{Binding Hotel.ImageChambre1}"
                                Aspect="AspectFill"
                                HeightRequest="260"
                                WidthRequest="260"
                                HorizontalOptions="Center" />
-                            <Label Text="{Binding Hotel.TypeChambre1}"
+                                <Label Text="{Binding Hotel.TypeChambre1}"
                                FontAttributes="Bold"
                                FontSize="18"
                                HorizontalOptions="Center"
                                VerticalOptions="Center" />
-                        </StackLayout>
-                </Frame>
-                    <Frame BorderColor="Gray" CornerRadius="5" Margin="15" >
-                    <StackLayout>
-                        
-                        <Image Source="{Binding Hotel.ImageChambre2}"
-                               Aspect="AspectFill"
-                               HeightRequest="260"
-                               WidthRequest="260"
-                               HorizontalOptions="Center" />
-                            <Label Text="{Binding Hotel.TypeChambre2}"
-                               FontAttributes="Bold"
-                               FontSize="18"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center" />
-                        </StackLayout>
-                </Frame>
-                    <Frame  BorderColor="Gray"  CornerRadius="5" Margin="15" >
-                    <StackLayout>
-                      
-                        <Image Source="{Binding Hotel.ImageChambre3}"
-                               Aspect="AspectFill"
-                               HeightRequest="260"
-                               WidthRequest="260"
-                               HorizontalOptions="Center" />
-                            <Label Text="{Binding Hotel.TypeChambre3}"
-                               FontAttributes="Bold"
-                               FontSize="18"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center" />
-                        </StackLayout>
-                </Frame>
-                    <Frame BorderColor="Gray" CornerRadius="5" Margin="15">
-                    <StackLayout>
-               
-                    <Image Source="{Binding Hotel.ImageChambre4}"
-                               Aspect="AspectFill"
-                               HeightRequest="260"
-                               WidthRequest="260"
-                               HorizontalOptions="Center" />
-                    <Label Text="{Binding Hotel.TypeChambre4}"
-                               FontAttributes="Bold"
-                               FontSize="18"
-                               HorizontalOptions="Center"
-                               VerticalOptions="Center" />
-                        </StackLayout>
-                </Frame>
+                            </StackLayout>
+                        </Frame>
+                        <Frame BorderColor="Gray" CornerRadius="5" Margin="15" >
+                            <StackLayout>
 
-                </StackLayout>
+                                <Image Source="{Binding Hotel.ImageChambre2}"
+                               Aspect="AspectFill"
+                               HeightRequest="260"
+                               WidthRequest="260"
+                               HorizontalOptions="Center" />
+                                <Label Text="{Binding Hotel.TypeChambre2}"
+                               FontAttributes="Bold"
+                               FontSize="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame  BorderColor="Gray"  CornerRadius="5" Margin="15" >
+                            <StackLayout>
+
+                                <Image Source="{Binding Hotel.ImageChambre3}"
+                               Aspect="AspectFill"
+                               HeightRequest="260"
+                               WidthRequest="260"
+                               HorizontalOptions="Center" />
+                                <Label Text="{Binding Hotel.TypeChambre3}"
+                               FontAttributes="Bold"
+                               FontSize="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                            </StackLayout>
+                        </Frame>
+                        <Frame BorderColor="Gray" CornerRadius="5" Margin="15">
+                            <StackLayout>
+
+                                <Image Source="{Binding Hotel.ImageChambre4}"
+                               Aspect="AspectFill"
+                               HeightRequest="260"
+                               WidthRequest="260"
+                               HorizontalOptions="Center" />
+                                <Label Text="{Binding Hotel.TypeChambre4}"
+                               FontAttributes="Bold"
+                               FontSize="18"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center" />
+                            </StackLayout>
+                        </Frame>
+
+                    </StackLayout>
+                </ScrollView>
                 <Grid>
-                <Button Text="Réserver"
+                        <Button Text="Réserver"
                         Grid.Row="1"
                         Grid.Column="0"
-                        Command="{Binding NaviguateCommand}"
+                        Command="{Binding NaviguateNowCommand}"
                 Style="{StaticResource ButtonOutline}"
                         WidthRequest="160"
                         HorizontalOptions="EndAndExpand"
@@ -118,7 +117,7 @@
 
 
 
-                    <Button Text="Show on Map" 
+                        <Button Text="Show on Map" 
                         Grid.Row="1"
                         Grid.Column="1"
                         Command="{Binding OpenMapCommand}"
@@ -126,7 +125,9 @@
                         WidthRequest="160" 
                         Margin="8"
                         Style="{StaticResource ButtonOutline}"/>
-                </Grid>
+                    </Grid>
+
+              
 
             </VerticalStackLayout>
         </Grid>
