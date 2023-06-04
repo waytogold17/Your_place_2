@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Demo2.DetailsReservationPage1"
+             xmlns:model="clr-namespace:Demo2.Models"
+             xmlns:viewmodel="clr-namespace:Demo2.ViewModel"
+             x:DataType="viewmodel:DeatailsReservationPageViewModel"
+             BackgroundImageSource="hotel2"
+             
+             Title="Détails bookings ">
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Frame Margin="10" BackgroundColor="DeepSkyBlue" CornerRadius="5" WidthRequest="320">
+            <Picker Title="Selectionnez votre chambre "
+          ItemsSource="{Binding Hotels}"
+         ItemDisplayBinding="{Binding Hotel.TypeChambre1}"
+        SelectedItem="{Binding SelectedHotel}" />
+            </Frame>
+
+            <Label Text="{Binding SelectedHotel.TypeChambre1}"  />
+            <Image Source="{Binding SelectedHotel.ImageChambre1}" />
+            
+            <Label Text="{Binding Hotel.PrixChambre1 ,StringFormat='{0}  '}" x:Name="lasource" BindingContextChanged="Result"/>
+            
+            <Frame Margin="10" BackgroundColor="DeepSkyBlue" CornerRadius="5" WidthRequest="320">
+            <Picker x:Name="numberPicker" Title="Selectionnez le nombre de chambre voulu" SelectedIndexChanged="numberPicker_SelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:Int32}">
+                        <x:Int32>1</x:Int32>
+                        <x:Int32>2</x:Int32>
+                        <x:Int32>3</x:Int32>
+                        <x:Int32>4</x:Int32>
+                        <x:Int32>5</x:Int32>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            </Frame>
+        
+        
+            <Frame Margin="10" BackgroundColor="DeepSkyBlue" CornerRadius="5" WidthRequest="320"> 
+            <HorizontalStackLayout>
+                <Label Text="Prix Total : " TextColor="Black" />
+                <Label x:Name="lacible"  TextColor="Black" />
+            </HorizontalStackLayout>
+            </Frame>
+
+            <Label Text="Début du séjour " TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center"/>
+            <Frame Margin="10" BackgroundColor="GreenYellow" CornerRadius="5" WidthRequest="320" HeightRequest="75" > 
+            <DatePicker x:Name="startDate"
+                       Format="D"
+                        DateSelected="StartDate_DateSelected"
+                       />
+            </Frame>
+            <Label Text="Fin du séjour" TextColor="Black" FontSize="Large" HorizontalTextAlignment="Center" />
+            <Frame  Margin="10" BackgroundColor="GreenYellow" CornerRadius="5" WidthRequest="320" HeightRequest="75"> 
+            <DatePicker  x:Name="endDate"
+                          Format="D"
+                        DateSelected="StartDate_DateSelected"
+                        BindingContext="{x:Reference startDate}"
+                         MinimumDate="{Binding CurrentDate}"
+                       
+                         />
+            </Frame>
+            <Label Text="Nombre total de jour"
+                   TextColor="Black"
+                   FontSize="Medium"
+                   x:Name="label"
+                   HorizontalOptions="Center"
+                   />
+            <ScrollView Orientation="Horizontal" HorizontalScrollBarVisibility="Never" Margin="15">
+            <StackLayout Orientation="Horizontal" HeightRequest="45">
+                <Frame Margin="10" HeightRequest="120" WidthRequest="100">
+                    <ImageButton Source="visa" HeightRequest="100" Clicked="ImageButton_Clicked"/>
+                </Frame>
+
+                    <Frame Margin="7" HeightRequest="120" WidthRequest="100" >
+                        <ImageButton Source="mastercard" HeightRequest="120" WidthRequest="100"   Clicked="ImageButton_Clicked" />
+                </Frame>
+
+                    <Frame Margin="7" HeightRequest="120" WidthRequest="100" >
+                        <ImageButton Source="etheureum" HeightRequest="120" WidthRequest="100"   Clicked="ImageButton_Clicked" />
+                </Frame>
+
+                    <Frame Margin="7" HeightRequest="120" WidthRequest="100">
+                        <ImageButton Source="paypal2" HeightRequest="120" WidthRequest="100"  Clicked="ImageButton_Clicked" />
+                </Frame>
+
+                    <Frame Margin="7" HeightRequest="120" WidthRequest="100">
+                        <ImageButton Source="dollar" HeightRequest="120" WidthRequest="100"  Clicked="ImageButton_Clicked" />
+                    </Frame>
+                </StackLayout>
+              
+
+            </ScrollView>
+            <HorizontalStackLayout>
+                <CheckBox Color="Azure" x:Name="validation"/>
+                <Label Text="Paiement validé" TextColor="Black" HeightRequest="25" FontSize="Medium"/>
+            </HorizontalStackLayout>
+
+            <Button Text="Valider" 
+                     
+                        Command="{Binding NaviguatePlusCommand}"
+                        HorizontalOptions="Center" 
+                        WidthRequest="320" 
+                        Margin="8"
+                    
+                        CornerRadius="10"
+                        Style="{StaticResource ButtonOutline}"/>
+        
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+
+</ContentPage>
