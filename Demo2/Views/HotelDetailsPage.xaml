@@ -108,7 +108,7 @@
                         <Button Text="Réserver"
                         Grid.Row="1"
                         Grid.Column="0"
-                        Command="{Binding GoToNextCommand}"
+                        Command="{Binding NaviguatePlusCommand}"
                 Style="{StaticResource ButtonOutline}"
                         WidthRequest="160"
                         HorizontalOptions="EndAndExpand"

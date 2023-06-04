@@ -51,13 +51,8 @@ public partial class HotelDetailsPageViewModel : BaseViewModel
 
 
     [RelayCommand]
-    async Task GoToNext(Hotel hotel)
-    {
-        await Shell.Current.GoToAsync(nameof(DetailsReservationPage1), true, new Dictionary<string, object>
-    {
-        {"Hotel", hotel }
-    });
-    }
+
+    Task NaviguatePlus() => Shell.Current.GoToAsync(nameof(DetailsReservationPage1));
 
 
   
