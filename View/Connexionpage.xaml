@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hotellerie.View.Connexionpage"
+             BackgroundImageSource="hotel.jpeg"
+             Shell.NavBarIsVisible="False">
+   
+    <VerticalStackLayout
+        Spacing="25"
+        Padding="0,0"
+        Margin="2,2"
+        VerticalOptions="Fill">
+        
+       
+
+        <Label 
+            Text="Recently join us and don't have an account?"
+            TextColor="Gold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="25"/>
+        <Label 
+            Text="Please"
+            TextColor="Gold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            FontSize="25"/>
+        <Button 
+            Text="register here"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="RegistrationRedirect"
+           />
+
+        <Label 
+            Text="Already have an account?"
+            TextColor="Gold"
+            FontSize="25"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"/>
+        
+        <Button 
+            Text="Login here"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            Clicked="LoginRedirect"/>
+
+        <Label 
+            Text="Thanks for choosing us"
+            VerticalOptions="End" 
+            HorizontalOptions="EndAndExpand"
+            FontSize="Subtitle"
+            TextColor="BlanchedAlmond"
+            />
+    </VerticalStackLayout>
+    
+</ContentPage>

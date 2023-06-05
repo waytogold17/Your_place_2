@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundImageSource="log.jpg"
+             x:Class="hotellerie.View.Login"
+             >
+    <ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="PlaceholderColor" Value="Black" />
+            <Setter Property="Placeholder" Value="{Binding Placeholder}" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="Margin" Value="0,5" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="VerticalOptions" Value="Center" />
+
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="CornerRadius" Value="30"/>
+            <Setter Property="Padding" Value="10,0"/>
+            <Setter Property="Margin" Value="2,10" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="#80FFFFFF" Opacity="0.9" Padding="30,10,30,80" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+
+
+
+                </Grid.RowDefinitions>
+
+                <Label Text="LOGIN" FontSize="30" FontAttributes="Bold" TextColor="RoyalBlue"  HorizontalOptions="CenterAndExpand" />
+
+               
+                <Label Text="Email" FontAttributes="Bold"  Grid.Row="4" Grid.ColumnSpan="2"  />
+
+                <Frame Grid.Row="5" Grid.ColumnSpan="2">
+                    <Entry x:Name="EntryEmail" Placeholder="Enter your email address" />
+                </Frame>
+
+
+                <Label Text="Password" FontAttributes="Bold" TextColor="Black" Grid.Row="8" Grid.ColumnSpan="2" HorizontalOptions="Center" />
+
+                <Frame Grid.Row="9" Grid.ColumnSpan="2">
+                    <Entry x:Name="EntryPassword" Placeholder="Enter your password" IsPassword="True" />
+                </Frame>
+
+                <Button Text="Login" TextColor="RoyalBlue" FontSize="20" VerticalOptions="End"  Clicked="AuthenticateUser" HorizontalOptions="Center" Grid.Row="11" Grid.ColumnSpan="2" Margin="0,0,0,-60"/>
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

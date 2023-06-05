@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hotellerie.View.Registration"
+             BackgroundImageSource="hest.jpg"
+             Shell.NavBarIsVisible="True">
+    <ContentPage.Resources>
+        <Style TargetType="Entry">
+            <Setter Property="PlaceholderColor" Value="Black" />
+            <Setter Property="Placeholder" Value="{Binding Placeholder}" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="TextColor" Value="White" />
+            <Setter Property="HeightRequest" Value="40" />
+            <Setter Property="Margin" Value="0,5" />
+            <Setter Property="HorizontalOptions" Value="FillAndExpand" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            
+        </Style>
+
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+        </Style>
+                       
+        <Style TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="Transparent" />
+            <Setter Property="CornerRadius" Value="45"/>
+           <Setter Property="Padding" Value="17,2"/>
+            <Setter Property="Margin" Value="2,2" />
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <Grid BackgroundColor="#80FFFFFF" Opacity="0.9" Padding="30,40,30,80" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                   
+                    
+
+                </Grid.RowDefinitions>
+
+                <Label Text="SIGN UP" FontSize="30" FontAttributes="Bold" TextColor="RoyalBlue"  HorizontalOptions="CenterAndExpand" />
+
+                <Label Text="Name and Surname" FontAttributes="Bold" TextColor="Black" Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="Center" />
+
+                <Frame Grid.Row="3" Grid.ColumnSpan="2">
+                    <Entry x:Name="entryName" Placeholder="Enter your name and surname" />
+                </Frame>
+
+                <Label Text="Email" FontAttributes="Bold"  Grid.Row="4" Grid.ColumnSpan="2"  />
+
+                <Frame Grid.Row="5" Grid.ColumnSpan="2">
+                    <Entry x:Name="entryEmail" Placeholder="Enter your email address" />
+                </Frame>
+
+                <Label Text="Phone Number" FontAttributes="Bold" TextColor="Black" Grid.Row="6" Grid.ColumnSpan="2" HorizontalOptions="Center" />
+
+                <Frame Grid.Row="7" Grid.ColumnSpan="2">
+                    <Entry x:Name="entryPhoneNumber" Placeholder="Enter your phone number" />
+                </Frame>
+
+                <Label Text="Password" FontAttributes="Bold" TextColor="Black" Grid.Row="8" Grid.ColumnSpan="2" HorizontalOptions="Center" />
+
+                <Frame Grid.Row="9" Grid.ColumnSpan="2">
+                    <Entry x:Name="entryPassword" Placeholder="Enter your password" IsPassword="True" />
+                </Frame>
+
+                <Label Text="Confirm Password" FontAttributes="Bold" TextColor="Black" Grid.Row="10" Grid.ColumnSpan="2" />
+
+                <Frame Grid.Row="11" Grid.ColumnSpan="2">
+                    <Entry x:Name="entryConfirmPassword" Placeholder="Confirm your password" IsPassword="True" />
+                </Frame>
+
+                <Button Text="Register" TextColor="RoyalBlue" FontSize="20" VerticalOptions="End" HorizontalOptions="Center" Grid.Row="11" Grid.ColumnSpan="2" Margin="0,0,0,-60"/>
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

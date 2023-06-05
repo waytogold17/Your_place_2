@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="hotellerie.View.HomePage2"
+             BackgroundImageSource="hotel1.jpeg"
+             Title="Your place ">
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+           
+           
+          
+
+            <Label
+                SemanticProperties.HeadingLevel="Level1"
+                Text="Welcome to your place "
+                FontSize="32"
+                TextColor="GhostWhite"
+                HeightRequest="470"
+                VerticalOptions="Start" 
+                HorizontalOptions="Start"
+                />
+                
+              
+
+            <Label
+                Text="Wherever your're alone,in couple or even more our you'll absolutely find the offer that suit you the best. 
+                Why wait more? get started now ! "
+                SemanticProperties.HeadingLevel="Level2"
+                TextColor="GhostWhite"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+           
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
