@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:model="clr-namespace:hotellerie.Models"
+             xmlns:viewmodel="clr-namespace:hotellerie.ViewModels"
+             x:Class="hotellerie.View.HotelsPage"
+             Shell.TabBarIsVisible="True"
+             xmlns:ios="clr-namespace:Microsoft.Maui.Controls.PlatformConfiguration.iOSSpecific;assembly=Microsoft.Maui.Controls"
+    ios:Page.UseSafeArea="True"
+             Title="Hotels"
+             
+              x:DataType="viewmodel:HotelsViewModel">
+    <ScrollView>
+        <VerticalStackLayout>
+
+
+
+            <CollectionView>
+                <CollectionView.ItemsSource>
+                    <x:Array Type="{x:Type model:Hotel}">
+                        <model:Hotel
+                                    Nom="Viroth’s Hotel "
+                                    ImageHotel="https://static.logitravel.com/cloudcontent/fotos/agregadorHotelero/0027/87591/2787591/15.jpg?f=16438519"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Hotel à Siem Reap est un hôtel de luxe 4,5 étoiles situé dans le quartier dynamique de Wat Bo à Siem Reap1. L’hôtel dispose d’une piscine extérieure de 20 mètres de long et d’un restaurant en plein air1. Les chambres sont décorées dans le style des années 50 et disposent d’une connexion Wi-Fi gratuite1. L’hôtel est situé à seulement 400 mètres du vieux marché et à 600 mètres de la célèbre Pub Street1. Le temple d’Angkor Wat, site classé au patrimoine mondial de l’UNESCO, est à 6,4 km et l’aéroport international de Siem Reap-Angkor est implanté à 8 km"
+                                    TypeChambre1="Suite double"
+                                    TypeChambre2="Suite double avec vue sur la mer"
+                                    TypeChambre3="Chambre deluxe simple"
+                                    TypeChambre4="Chambre deluxe double avec vu sur la mer"
+                                    ImageChambre1="https://www.viroth-hotel.com/wp-content/uploads/2019/05/Deluxe-Double-Room-1-600x400.jpg"
+                                    ImageChambre2="https://www.viroth-hotel.com/wp-content/uploads/2019/05/Deluxe-Double-Pool-View-1-600x400.jpg"
+                                    ImageChambre3="https://www.viroth-hotel.com/wp-content/uploads/2019/05/Deluxe-Twin-Room-3-600x400.jpg"
+                                    ImageChambre4="https://www.viroth-hotel.com/wp-content/uploads/2019/05/Deluxe-Twin-Pool-View-1-1024x683.jpg"
+                                    />
+                        <model:Hotel
+                                    Nom= "The Magnolia Hotel et Spa"
+                                    ImageHotel= "https://i.travelapi.com/hotels/1000000/210000/201100/201024/c03cde05_z.jpg"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Situé à Victoria, à seulement 4 minutes à pied du port intérieur, le The Magnolia Hotel &amp; Spa vous propose un restaurant sur place et des chambres avec une connexion Wi-Fi gratuite. Les chambres du The Magnolia Hotel &amp; Spa sont toutes équipées de la télévision par câble. Elles comprennent également un bureau. Des articles de toilette Aveda, du café gastronomique, du thé et une bouteille d'eau vous seront fournis. L'Hotel Magnolia vous offrira des fruits frais à l'arrivée."
+                                     TypeChambre1="Chambre supérieure"
+                                    TypeChambre2="Chambre D'angle"
+                                    TypeChambre3 ="Chambre diamant vue ville"
+                                    TypeChambre4 ="Chambre Diamant vue port"
+                                    ImageChambre1= "https://q-xx.bstatic.com/xdata/images/hotel/840x460/37641253.jpg?k=ae951a56876b5f41cff6256209a203f1f5217d1696e9e8c84c77ecb3f4f144c5&amp;o="
+                                    ImageChambre2= "https://cf.bstatic.com/xdata/images/hotel/max1024x768/346905778.jpg?k=b53287c2a70e386128f87edd1f4d0d920635d2732f071bb0e20f81a810d90008&amp;o="
+                                    ImageChambre3= "https://cf.bstatic.com/xdata/images/hotel/max1024x768/16077648.jpg?k=debd27d74507def56b4fa56878cea0e70746f20e9498875ce2ce39ea03ab7014&amp;o="
+                                    ImageChambre4= "https://cf.bstatic.com/xdata/images/hotel/max1024x768/346725790.jpg?k=063fa6f56a2d59295ede3918cb4fe35577fbe3796b8d33619e390e4d5049e0de&amp;o="
+                                    />
+                        <model:Hotel
+                                    Nom="Keemala"
+                                    ImageHotel="https://cf.bstatic.com/xdata/images/hotel/max1280x900/239913768.jpg?k=f28feda332a61939ff05dbed69cbb66eecabd3d9efc5de5e14bab0e12a6426c1&amp;o=&amp;hp=1"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Le Keemala - SHA Plus est niché au cœur d’une végétation luxuriante au sommet des collines ondoyantes surplombant le village de Kamala et la mer d’Andaman. Les salles de bains privatives sont pourvues d’une baignoire et d’articles de toilette ravissants."   
+                                    TypeChambre1="Chambre traditionnelle simple"
+                                    TypeChambre2="Suite deluxe vue cascade"
+                                    TypeChambre3="Cocon forestier en hauteur"
+                                    TypeChambre4="Chambre traditionnelle magistrale"
+                                    ImageChambre1="https://cf.bstatic.com/xdata/images/hotel/max1024x768/239860871.jpg?k=0d7585daf8d1049abb91c030e4579c460b8fc27696216ab9786fa5b7594be1d1&amp;o=&amp;hp=1"
+                                    ImageChambre2="https://cf.bstatic.com/xdata/images/hotel/max1024x768/239655383.jpg?k=df8f9768304ef4768112da12f3fe6436c9a62455e7aa5cd472e8bc1e94f1a5ca&amp;o=&amp;hp=1"
+                                    ImageChambre3="https://cf.bstatic.com/xdata/images/hotel/max1024x768/239655225.jpg?k=a938dfe356d63952a38921de3dd8c60292708abd35e7bf82369f9aceecf2499a&amp;o=&amp;hp=1"
+                                    ImageChambre4="https://cf.bstatic.com/xdata/images/hotel/max1024x768/239913768.jpg?k=f28feda332a61939ff05dbed69cbb66eecabd3d9efc5de5e14bab0e12a6426c1&amp;o=&amp;hp=1"   
+                                        />
+                        <model:Hotel
+                                    Nom="Tulemar Bungalows et Villas "
+                                    ImageHotel="https://i.travelapi.com/hotels/77000000/76880000/76876700/76876605/ac97eadc_z.jpg"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Tulemar est le premier complexe hôtelier de Manuel Antonio. Fermé et sécurisé, le complexe de 33 acres dans la jungle est perché sur la colline surplombant le Pacifique."     
+                                    TypeChambre1="Suite simple"
+                                    TypeChambre2= "Suite double"
+                                    TypeChambre3="bungalow deluxe"
+                                    TypeChambre4="bungalow deluxe double "
+                                    ImageChambre1="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/2e/6b/d1/birds-nest-pool-villa.jpg?w=1200&amp;h=-1&amp;s=1"
+                                    ImageChambre2="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/2e/6c/ec/tent-pool-villa.jpg?w=1200&amp;h=-1&amp;s=1"
+                                    ImageChambre3="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/2e/6c/fd/tent-pool-villa-2.jpg?w=1200&amp;h=-1&amp;s=1"
+                                    ImageChambre4="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/8c/48/3b/clay-pool-cottage.jpg?w=1200&amp;h=-1&amp;s=1"
+                                        />
+                        <model:Hotel
+                                    Nom="Quinta Jardins do Lago"
+                                    ImageHotel="https://cf.bstatic.com/xdata/images/hotel/max1280x900/254172213.jpg?k=9db747883e2f25e471b78a156d735861a4219b80cc18d33036ba39fc0a054939&amp;o=&amp;hp=1"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Situé dans les collines entourant Funchal, le Quinta Jardins do Lago vous accueille dans une demeure de caractère datant du XVIIIe siècle, nichée dans un vaste jardin botanique comportant 600 espèces de plantes. Toutes les chambres possèdent un balcon donnant sur le jardin. Dotées d’un grand balcon, les chambres spacieuses du Quinta Jardins do Lago comprennent la climatisation,le Wi-Fi."   
+                                    TypeChambre1= "Chambre deluxe simple "
+                                    TypeChambre2= "Chambre deluxe VIP"
+                                    TypeChambre3="Chambre plein air vue montagne "
+                                    TypeChambre4= "Chambre plein air vue ville"
+                                    ImageChambre1= "https://q-xx.bstatic.com/xdata/images/hotel/840x460/254177162.jpg?k=6522ee679fc7b78944dc54fb276218a9b5fca025378bf58685d30afa33189241&amp;o="
+                                    ImageChambre2="https://q-xx.bstatic.com/xdata/images/hotel/840x460/254172208.jpg?k=0cc8e1df1202d21a5113bc0e1ed573e7083d35731b67d4af5caec491968d4c06&amp;o="
+                                    ImageChambre3= "https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/254178372.jpg?k=02a2576dee3eb47e644597ecce087d1907cf9e69c00c42476d47ab0542c674b2&amp;o="
+                                    ImageChambre4="https://cdn-img.readytotrip.com/t/1024x768/content/7a/fc/7afc1091105e6a5bac7eda994d6aa15450d1c3d4.jpeg"   
+                                        />
+                        <model:Hotel
+                                    Nom="The Place Luxury Boutique Villas "
+                                    ImageHotel="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/254171247.jpg?k=1cddbcce7469b8e07abde6fc1fde4d379502e443f27908a539720cbb0d34ef3e&amp;o="
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Excellent choix pour les voyageurs visitant Koh Tao, la The Place Luxury Boutique Villas offre un cadre romantique et de nombreux services conçus pour sublimer votre séjour. Avec ses chambres équipées d'une télévision à écran plat, d'une climatisation et d'un minibar. Pendant votre séjour la The Place Luxury Boutique Villas vous fait profiter d'un service de chambre et d'une conciergerie."   
+                                     TypeChambre1="Chambre simple"
+                                    TypeChambre2= "Suite romantique "
+                                    TypeChambre3="Chambre vue mer"
+                                    TypeChambre4= "Suite simple"
+                                    ImageChambre1="https://q-xx.bstatic.com/xdata/images/hotel/max1024x720/71387054.jpg?k=5efb1f4bc19e729d070174e5f2dcd837da60b12668bfaf4e95882c253bd787a3&amp;o="
+                                    ImageChambre2="https://i.travelapi.com/lodging/20000000/19830000/19829300/19829203/a2700827_z.jpg"
+                                    ImageChambre3="https://media-cdn.tripadvisor.com/media/photo-s/0e/07/f8/a9/the-place-luxury-boutique.jpg"
+                                    ImageChambre4= "https://images.trvl-media.com/hotels/20000000/19830000/19829300/19829203/ade03287_z.jpg"    
+                                        />
+                        <model:Hotel
+                                    Nom="La Maison d’Aix"
+                                    ImageHotel="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/16919089.jpg?k=a43cde092740f6c7d8538a9f47631e9a300e40ef362297d73a26968e58e3ba7f&amp;o="
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="L'établissement La Maison d'Aix se trouve dans le quartier Mazarin, à 3 minutes à pied du cours Mirabeau. La connexion Wi-Fi est gratuite."  
+                                     TypeChambre1="Chambre simple"
+                                    TypeChambre2="Chambre double"
+                                    TypeChambre3="Complexe deluxe"
+                                    TypeChambre4="Suite vue ville"
+                                    ImageChambre1="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/16918658.jpg?k=39825f5c1970f5d8c13b27947e9d4192fbabaac9fc87ba670b6368ed077e3ccf&amp;o="
+                                    ImageChambre2="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/16918669.jpg?k=eaf0696fa73388f5ef36c3f1eb654fab794d74284ae1ebbdc12cb36f051a97c2&amp;o="
+                                    ImageChambre3="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/16827515.jpg?k=486b66840cad2b4ff758291db013974416584a2eed9bf3422788cc6f9bc8c420&amp;o="
+                                    ImageChambre4="https://q-xx.bstatic.com/xdata/images/hotel/840x460/16918669.jpg?k=eaf0696fa73388f5ef36c3f1eb654fab794d74284ae1ebbdc12cb36f051a97c2&amp;o="   
+                                        />
+                        <model:Hotel
+                                    Nom= "Hotel 41"
+                                    ImageHotel="https://bpprodstorage.blob.core.windows.net/bpprodcontainer/b58086a8-a64c-4cdb-b971-3217e60087a5/images/b1fe9d1c-8bf7-4475-8809-7bd4b1d26c9241%201.jpg"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Installé derrière le palais de Buckingham, en face des écuries royales, le 41 est un hôtel de luxe qui propose de superbes chambres, de généreuses collations."    
+                                     TypeChambre1= "Chambre simple"
+                                        TypeChambre2="Chambre double"
+                                        TypeChambre3= "Suite diplomatique"
+                                        TypeChambre4="Suite celébrité"
+                                        ImageChambre1="https://cf.bstatic.com/xdata/images/hotel/max1024x768/13882901.jpg?k=dd476bcba9d337168d3dc275294119086a39c370b1ed8fb1597b6ffbc8e423c4&amp;o=&amp;hp=1"
+                                        ImageChambre2="https://cf.bstatic.com/xdata/images/hotel/max1024x768/220806736.jpg?k=feed204ee4ae579aeb19299c23b7a6ddacd4d91ce0fdd5efd6f88e071feb10be&amp;o=&amp;hp=1"
+                                        ImageChambre3="https://cf.bstatic.com/xdata/images/hotel/max1024x768/135104853.jpg?k=72741e74dcf68d05b960aa29d90e47c0eb7517abe4000c6a76ece9d6fd8ffbe9&amp;o=&amp;hp=1"
+                                        ImageChambre4= "https://q-xx.bstatic.com/xdata/images/hotel/max1024x720/220814594.jpg?k=5da1a2ba300cd7166981de3dbb0aa492fd4ca473d3e71f3930bd8d64954131ae&amp;o="    
+                                        />
+                        <model:Hotel
+                                    Nom="Belmond Palacio Nazarenas"
+                                    ImageHotel="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/13935717.jpg?k=c46f66ceafc9f0ee2d689380c1f8bf87be5a40f6e245faf7600b60e5fbfe8457&amp;o="
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="le Belmond Palacio Nazarenas est une destination de choix pour les touristes. Le Belmond Palacio Nazarenas vous propose une foule de commodités."   
+                                    TypeChambre1="Suite deluxe"
+                                    TypeChambre2="Chambre simple "
+                                    TypeChambre3="Suite détente"
+                                    TypeChambre4= "Chambre deluxe"
+                                    ImageChambre1="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/35/45/79/junior-suite.jpg?w=1200&amp;h=-1&amp;s=1"
+                                    ImageChambre2="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/35/45/77/studio-suite.jpg?w=1200&amp;h=-1&amp;s=1"
+                                    ImageChambre3="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/35/45/75/deluxe-studio-suite-bathroom.jpg?w=1200&amp;h=-1&amp;s=1"
+                                    ImageChambre4="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/35/45/74/bathroom.jpg?w=1200&amp;h=-1&amp;s=1"   
+                                        />
+                        <model:Hotel
+                                    Nom="The Nantucket Hotel &amp; Resort "
+                                    ImageHotel="https://q-xx.bstatic.com/xdata/images/hotel/max1024x720/169719951.jpg?k=eebab4a6d9b9e98bba59c5aba98d99314e138a8024d8c68b6a86d989bd0c6290&amp;o="
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="L'hôtel propose différents types d'hébergement, notamment des chambres, des suites et des cottages, tous conçus avec un mélange d'équipements modernes et du charme classique de la Nouvelle-Angleterre. Chaque chambre est meublée avec soin et équipée de lits confortables, de salles de bains privatives et de commodités modernes telles que des télévisions à écran plat, une connexion Wi-Fi et la climatisation."   
+                                    TypeChambre1="Chambre simple"
+                                    TypeChambre2="Chambre kids"
+                                    TypeChambre3="Chambre kids double"
+                                    TypeChambre4="Suite simple"
+                                    ImageChambre1="https://q-xx.bstatic.com/xdata/images/hotel/840x460/276697599.jpg?k=4892aefb588a5972e9310fc93329d65bc98e8b42ecf93e90da51737344a443c3&amp;o="
+                                    ImageChambre2="https://q-xx.bstatic.com/xdata/images/hotel/840x460/276108312.jpg?k=603218cb9c44ad39e482969e696d440c1231266725ef652d3b6d9d8e97ac30e3&amp;o="
+                                    ImageChambre3="https://q-xx.bstatic.com/xdata/images/hotel/max1024x720/286314216.jpg?k=b0978098a1bf52bc5cd17e2849f57b65b77a04ceaeda94a55cbc9bedf8e4c9b6&amp;o="
+                                    ImageChambre4="https://q-xx.bstatic.com/xdata/images/hotel/840x460/286310404.jpg?k=fdf54ca0e7d60bafdb8fc169c1da7d1920c364a6c6e152cb6d18a916eda2f659&amp;o="   
+                                        />
+                        <model:Hotel
+                                    Nom="The Sherry-Netherland Hotel"
+                                    ImageHotel= "https://cf.bstatic.com/xdata/images/hotel/max1280x900/52863823.jpg?k=cc505bdefc4d8da4a75168100dc504b6b2409b62a4f8e26af976139a8c6e72fc&amp;o=&amp;hp=1"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Le Sherry-Netherland Hotel est un hôtel emblématique situé à New York, aux États-Unis. Il est réputé pour son élégance intemporelle, son service de premier ordre et son emplacement privilégié sur la Cinquième Avenue, en face de Central Park.L'hôtel occupe un magnifique bâtiment de style néo-renaissance et propose des chambres et des suites somptueusement décorées. Chaque hébergement est doté d'un mobilier raffiné, de linge de maison de qualité supérieure et d'équipements modernes tels que des téléviseurs à écran plat, une connexion Wi-Fi et des salles de bains en marbre."
+                                      TypeChambre1="Chambre deluxe simple"
+                                        TypeChambre2="Chambre deluxe VIP"
+                                        TypeChambre3= "Suite diplomatique"
+                                        TypeChambre4="Suite romantique"
+                                        ImageChambre1= "https://cf.bstatic.com/xdata/images/hotel/max1024x768/221906548.jpg?k=63ef8c9e72e06570a9744fd8bde47b13c464f529fef683de66f6225ca1d7d3e0&amp;o=&amp;hp=1"
+                                        ImageChambre2="https://cf.bstatic.com/xdata/images/hotel/max1024x768/221906347.jpg?k=14ee543e9095a9ca7f762427039c2e94c1b1b7c0c20a8f29d1a9961042bad908&amp;o=&amp;hp=1"
+                                        ImageChambre3="https://cf.bstatic.com/xdata/images/hotel/max1024x768/221905925.jpg?k=9b16df970140ec971d511ec3a4bdad9e5ae48bf779a113102f840c68a20880d5&amp;o=&amp;hp=1"
+                                        ImageChambre4= "https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/221906353.jpg?k=8fc3c187189df7daa51a94523be5759704d95053bd94cfb38ff0cd0e992adbcb&amp;o="   
+                                        />
+                        <model:Hotel
+                                    Nom="The Omnia "
+                                    ImageHotel="https://i.travelapi.com/hotels/2000000/1520000/1513800/1513778/d8da33fd_z.jpg"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Les chambres et les suites de The Omnia sont aménagées avec soin, offrant des équipements modernes, un mobilier confortable et une vue imprenable sur les paysages environnants. Les clients peuvent s'attendre à des lits confortables, des salles de bains spacieuses, des technologies de pointe et des services personnalisés pour un séjour mémorable."   
+                                     TypeChambre1= "Chambre simple"
+                                    TypeChambre2="Chambre vue montagne"
+                                    TypeChambre3="Suite meeting"
+                                    TypeChambre4="Suite montagne vip"
+                                    ImageChambre1="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/28532244.jpg?k=837e2643ca29b1af84f0d2ecba64d91b50441639e0241f3b06e65a1068d70f9f&amp;o="
+                                    ImageChambre2="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/35941209.jpg?k=e84646d6d9ddde6670b5f7d4f98e9fe40f9461a3c3de2414124f73e4027760e2&amp;o="
+                                    ImageChambre3="https://www.hotelscombined.ie//himg/3d/30/cd/leonardo-1119622-08_boardroom_O-036165.jpg"
+                                    ImageChambre4="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/28532117.jpg?k=2e3508d1e9d8b0daa8c12981a61b641afc32c84d65652a7faede731502d79486&amp;o="    
+                                        />
+                        <model:Hotel
+                                    Nom="The Alpina Gstaad"
+                                    ImageHotel="https://res.cloudinary.com/grand-luxury/image/upload/w_1200,q_50,f_auto,c_fill,g_center,dpr_1/remote_glh/original/86579-root-exteriors-front-facade.jpg"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="L'hôtel est magnifiquement conçu, avec une architecture alpine traditionnelle combinée à des touches de modernité. Les chambres et les suites sont spacieuses, offrant des vues spectaculaires sur les montagnes environnantes. Chaque chambre est aménagée avec goût, alliant confort et luxe, et équipée de commodités haut de gamme pour répondre aux besoins des clients les plus exigeants."  
+                                     TypeChambre1="Chambre Old school"
+                                    TypeChambre2="Chambre Old school deluxe"
+                                    TypeChambre3="Suite meeting"
+                                    TypeChambre4="Suite romantique"
+                                    ImageChambre1="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/174594425.jpg?k=4367bf71162ef35dc8d7d683d9d9e2d8cbdcec480f87041ef667237f06ed6725&amp;o="
+                                    ImageChambre2="https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/174594423.jpg?k=ebe0404291374db2c49f31c0c61bc86442f94b1c21f3de135023f5b6410d862c&amp;o="
+                                    ImageChambre3= "https://q-xx.bstatic.com/xdata/images/hotel/max1280x900/181297924.jpg?k=c28feecd34125e01b8d4b84525a0ab61ee11332c8b8fb7e6d101c9fc1ab177bc&amp;o="
+                                    ImageChambre4="https://res.cloudinary.com/grand-luxury/image/upload/w_1200,q_50,f_auto,c_fill,g_center,dpr_1/remote_glh/original/86565-root-megu-dining-room.jpg"   
+                                        />
+                        <model:Hotel
+                                    Nom="The Milestone Hotel and Residences"
+                                    ImageHotel="https://bpprodstorage.blob.core.windows.net/bpprodcontainer/b58086a8-a64c-4cdb-b971-3217e60087a5/images/e36be69a-62f3-4bdf-bf9f-d112b0342910MS1.jpg"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="L'hôtel offre une variété d'hébergements, allant des chambres élégantes aux suites spacieuses. Chaque chambre est décorée avec goût et équipée de commodités modernes, tout en conservant une atmosphère chaleureuse et intemporelle. Les résidences du Milestone Hotel proposent des appartements de luxe entièrement équipés, parfaits pour les séjours prolongés ou les familles."    
+                                    TypeChambre1= "Antique luxury simple"
+                                    TypeChambre2="Joyful Room deluxe"
+                                    TypeChambre3= "Garden view room"
+                                    TypeChambre4="Modern room"
+                                    ImageChambre1="https://i.travelapi.com/hotels/1000000/530000/523800/523756/6cadcc47_z.jpg"
+                                    ImageChambre2="https://cf.bstatic.com/xdata/images/hotel/max1024x768/214303398.jpg?k=ac635070c1b793b3c8c88245231b8c9fbb0005fe34d9aa9cc3f1821d642acbce&amp;o=&amp;hp=1"
+                                    ImageChambre3="https://i.travelapi.com/hotels/1000000/530000/523800/523756/92fdf2bf_z.jpg"
+                                    ImageChambre4="https://i.travelapi.com/lodging/32000000/31730000/31727900/31727821/864952f2_z.jpg"   
+                                        />
+                        <model:Hotel
+                                    Nom="Sukhumvit Park, Bangkok — Marriott Executive Apartments"
+                                    ImageHotel= "https://cf.bstatic.com/xdata/images/hotel/max1280x900/243879561.jpg?k=810d569bcdb32074bdd7b94c0d5204633da151a417e45173d15eccc38feefbed&amp;o=&amp;hp=1"
+                                    Commentaire="Cliquez ici pour en savoir plus."
+                                    Description="Les appartements de Sukhumvit Park offrent un espace de vie spacieux et élégant, avec des aménagements modernes et des équipements de haute qualité. Chaque appartement est équipé d'une cuisine entièrement équipée, d'un salon confortable, d'une chambre à coucher séparée et d'une salle de bains élégante. Les clients peuvent profiter de la commodité d'avoir leur propre espace de vie, tout en bénéficiant des services et des installations d'un hôtel cinq étoiles."  
+                                     TypeChambre1="Chambre simple "
+                                    TypeChambre2="Duplexe familiale"
+                                    TypeChambre3="Suite meeting"
+                                    TypeChambre4="Suite romantique"
+                                    ImageChambre1="https://cf.bstatic.com/xdata/images/hotel/max1024x768/465555549.jpg?k=6ef35c90cd4b0d783898fe09eb93b2b9019d554018cede88227e5f24c7fd966e&amp;o=&amp;hp=1"
+                                    ImageChambre2="https://cf.bstatic.com/xdata/images/hotel/max1024x768/465555461.jpg?k=a8967716b6f148e47988dd785695fae0404085321b1a3a71769d93bfbfc7c74a&amp;o=&amp;hp=1"
+                                    ImageChambre3="https://cf.bstatic.com/xdata/images/hotel/max1024x768/465555556.jpg?k=97a05e1c343715d26d14393456b2d381d4384a14f8618bb6a0f528322e446e57&amp;o=&amp;hp=1"
+                                    ImageChambre4="https://cf.bstatic.com/xdata/images/hotel/max1024x768/465555567.jpg?k=e5e88fb504dfb62de91a6947b50ee7deeb95170d74f6b6fbb9893ee0733e7206&amp;o=&amp;hp=1"   
+                                        />
+
+                    </x:Array>
+                </CollectionView.ItemsSource>
+
+
+
+
+
+                <!--<CollectionView.ItemsLayout>
+                            <GridItemsLayout  Orientation="Horizontal" Span="3"/>
+                        </CollectionView.ItemsLayout>-->
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="model:Hotel">
+                        <Grid Padding="10" HorizontalOptions="Fill">
+                            <Frame HeightRequest="125" Style="{StaticResource CardView}">
+                                <Frame.GestureRecognizers>
+                                    <TapGestureRecognizer 
+                                                Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:HotelsViewModel}}, Path=GoToDetailsCommand}"
+                                                CommandParameter="{Binding .}"/>
+                                </Frame.GestureRecognizers>
+                                <Grid Padding="0" ColumnDefinitions="125,auto">
+                                    <Image
+                                                Aspect="AspectFill"
+                                                HeightRequest="125"
+                                                Source="{Binding ImageHotel}"
+                                                WidthRequest="125" />
+                                    <VerticalStackLayout
+                                                VerticalOptions="Center"
+                                                Grid.Column="1"
+                                                Padding="10">
+                                        <Label Style="{StaticResource LargeLabel}" Text="{Binding Nom }" FontSize="14" />
+                                        <Label Style="{StaticResource MediumLabel}" Text="{Binding Commentaire}" FontSize="12" />
+                                    </VerticalStackLayout>
+                                </Grid>
+                            </Frame>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+
+
+
+
+
+
+
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
